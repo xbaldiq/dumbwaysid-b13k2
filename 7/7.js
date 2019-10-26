@@ -24,7 +24,7 @@ db.connect(error => {
 
 //select posts
 app.get('/', (req, res) => {
-    let sql = 'SELECT name,image,deskripsi from books'; //? adalah place holder untuk variabel post
+    let sql = 'SELECT id,name,image,deskripsi,stok from books'; //? adalah place holder untuk variabel post
     let query = db.query(sql, (err, results) => {
         if (err) throw err;
         res.render('homepage', {
@@ -61,7 +61,7 @@ function tugasQuery3(){ //menampilkan buku sesuai ID
     });
 }
 
-// tugasQuery1();
-// tugasQuery2();
-// tugasQuery3();
+tugasQuery1();
+tugasQuery2();
+tugasQuery3();
 

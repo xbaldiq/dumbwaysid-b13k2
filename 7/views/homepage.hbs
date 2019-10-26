@@ -6,34 +6,22 @@
 </head>
 
 <body>
-    {{!-- <div class="row">
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some example text. Some example text.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">.col-sm-3</div>
-        <div class="col-sm-3">.col-sm-3</div>
-        <div class="col-sm-3">.col-sm-3</div>
-    </div> --}}
-
-    
     <div class="container">
-        <h2>Book List</h2>
-        <table class="table table-striped" id="mytable">
+        <h2 class="text-center">Perpustakan-ku</h2>
+        <table class="table table-hover" id="mytable">
             <tbody>
                 {{#each results}}
                 <tr>
-                    <td>{{ id }}</td>
-                    <td>{{ name }}</td>
-                    <td>{{ stok }}</td>
-                    <td><img src={{ image }} alt="Cinque Terre" class="img-responsive" ></td>
-                    <td>{{ deskripsi }}</td>
+
+                    <td><img src={{ image }} alt="Cinque Terre" class="img-responsive" width="175"></td>
+                    <td>
+                        
+                        <p class="font-weight-bold">Judul: </p><p>{{ name }}
+                        <span class="badge badge-pill badge-primary">Stok: {{ stok }}</span>
+                        <span class="badge badge-pill badge-info">ID: {{ id }} </span> </p>
+                        <p class="font-weight-bold">Deskripsi:</p>
+                        <p class="text-justify">{{ deskripsi }}</p>
+                    </td>
                     <td>{{ category_id }}</td>
                 </tr>
                 {{/each}}
@@ -43,7 +31,6 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
