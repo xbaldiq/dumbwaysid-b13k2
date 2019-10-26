@@ -64,3 +64,10 @@ function tugasQuery3(){ //menampilkan buku sesuai ID
 ```
 #### Bagian B
 
+
+![alt text][logo]
+![alt text][logo2]
+
+[logo]: https://github.com/xbaldiq/dumbwaysid-b13k2/blob/master/7/capture/chrome_2019-10-26_19-12-55.jpg "Capture 1"
+
+[logo2]: https://github.com/xbaldiq/dumbwaysid-b13k2/blob/master/7/capture/chrome_2019-10-26_19-13-16.jpg "Capture 2"
