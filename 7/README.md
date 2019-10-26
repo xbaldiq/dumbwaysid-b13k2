@@ -64,6 +64,7 @@ function tugasQuery3(){ //menampilkan buku sesuai ID
 ```
 #### Bagian B
 
+NB: Sementara hanya bisa menampilkan (READ), belum bisa melakukan UPDATE DELETE INSERT melalui GUI bootstrap
 
 ![alt text][logo]
 ![alt text][logo2]
